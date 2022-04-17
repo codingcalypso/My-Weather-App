@@ -5,9 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Weather App</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/883176ae3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          id="city-input"
+          class="enter-textbox"
+          type="search"
+          placeholder="Enter a city"
+        />
+        <div class="btn-group" role="group">
+          <button type="submit">
+            Search <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button type="button" id="current-location-button">
+            Current Location
+          </button>
+        </div>
+      </form>
+
+      <h1 id="city">Oklahoma City</h1>
+      <div class="todays-date" id="currentDate">Monday, March 28 2022</div>
+      <br />
+      <h2>
+        <span id="temperature">73°</span> <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </h2>
+      <div class="current-weather-icon">⛅</div>
+      <h3>Partly Cloudy</h3>
+      <br />
+      <h4>Next 5 Days</h4>
+      <div class="row next-five-days">
+        <div class="col-2">
+          <strong>Tue</strong>
+          <br />☀️ <br />69°
+        </div>
+        <div class="col-2">
+          <strong>Wed</strong>
+          <br />🌦️ <br />78°
+        </div>
+        <div class="col-2">
+          <strong>Thur</strong>
+          <br />☁️ <br />67°
+        </div>
+        <div class="col-2">
+          <strong>Fri</strong>
+          <br />☀️ <br />71°
+        </div>
+        <div class="col-2">
+          <strong> Sat</strong>
+          <br />⛅ <br />74°
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,54 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+button {
+  display: block;
+  width: 230px;
+  background-color: #b3e8f9;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1,
+h4 {
+  font-weight: bold;
+}
+.col-2 {
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px 60px;
+  background: #dad8d3;
+  border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    rgb(253, 246, 249) 0%,
+    rgb(230, 242, 248) 58%,
+    rgb(235, 229, 250) 100%
+  );
+}
+.current-weather-icon {
+  font-size: 50px;
+  text-align: center;
+}
+.enter-textbox {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+.next-five-days {
+  width: 600px;
+}
+.todays-date {
+  text-align: center;
+}
