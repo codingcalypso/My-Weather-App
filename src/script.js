@@ -40,6 +40,8 @@ function search(event) {
   let cityElement = document.querySelector("#city");
   let cityInput = document.querySelector("#city-input");
   cityElement.innerHTML = cityInput.value;
+
+  searchCity(cityInput.value);
 }
 
 let searchForm = document.querySelector("#search-form");
@@ -73,7 +75,6 @@ function searchCity(city) {
   let apiKey = "1d9067ba73a1abfa7b6d138a505896e6";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
-  searchCity(cityInput.value);
 }
 
 function searchLocation(position) {
